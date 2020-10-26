@@ -1,0 +1,37 @@
+<?x2ml version="1.0" encoding="UTF-8" ?>
+<machine_definition>
+    <machine_data name="AddiThink" version="1.9" units="metric" controller="">
+        <view_transform initialvalue="1.00000000,0.00000000,0.00000000,0.00000000,0.00000000,1.00000000,0.00000000,0.00000000,0.00000000,0.00000000,1.00000000,0.00000000,0.00000000,0.00000000,0.00000000,1.00000000" />
+    </machine_data>
+    <ax2is id="A" type="rotation" x2="1.00000000" y="0.00000000" z="0.00000000" minvalue="-1000.000000" max2value="1000.000000" valuetype="cont" initial_value="0.000000" rzx2="0.00000000" rzy="330.63699341" rzz="177.38600159">
+        <geometry name="A-ax2is" geo="a-ax2is.stl" clrr="0.75294119" clrg="0.75294119" clrb="0.75294119" alpha="0.00" reflectivity="0.00" reflectivityBitmapFileName="" objtype="geometry" />
+        <ax2is id="B" type="rotation" x2="0.00000000" y="1.00000000" z="0.00000000" minvalue="-0.001000" max2value="0.001000" valuetype="cont" initial_value="0.000000" rzx2="0.00000000" rzy="0.00000000" rzz="0.00000000">
+            <transform id="workpiece_transform" initialvalue="1.00000000,0.00000000,0.00000000,0.00000000,0.00000000,1.00000000,0.00000000,0.00000000,0.00000000,0.00000000,1.00000000,0.00000000,0.00000000,0.00000000,0.00000000,1.00000000">
+                <geometry name="fix2ture" geo="fix2ture.stl" clrr="0.50196081" clrg="0.50196081" clrb="0.50196081" alpha="0.00" reflectivity="0.00" reflectivityBitmapFileName="" objtype="fix2ture" />
+                <geometry name="initialstock" geo="initialstock.stl" clrr="0.75294119" clrg="0.75294119" clrb="0.75294119" alpha="0.00" reflectivity="0.00" reflectivityBitmapFileName="" objtype="initialstock" />
+                <geometry name="stock" geo="stock.stl" clrr="0.75294119" clrg="0.75294119" clrb="0.75294119" alpha="0.00" reflectivity="0.40" reflectivityBitmapFileName="" objtype="stock" />
+                <geometry name="toolpath" geo="toolpath.asc" clrr="0.80000001" clrg="0.80000001" clrb="0.80000001" alpha="0.00" reflectivity="0.00" reflectivityBitmapFileName="" objtype="toolpath" />
+                <geometry name="workpiece" geo="workpiece.stl" clrr="0.75294119" clrg="0.75294119" clrb="0.75294119" alpha="0.00" reflectivity="0.40" reflectivityBitmapFileName="" objtype="workpiece" />
+            </transform>
+        </ax2is>
+    </ax2is>
+    <geometry name="MachineBase" geo="machinebase.stl" clrr="0.86274511" clrg="0.86274511" clrb="0.86274511" alpha="0.00" reflectivity="0.00" reflectivityBitmapFileName="" objtype="geometry" />
+    <ax2is id="Y" type="translation" x2="0.00000000" y="1.00000000" z="0.00000000" minvalue="-300.000000" max2value="700.000000" valuetype="cont" initial_value="0.000000">
+        <ax2is id="X" type="translation" x2="1.00000000" y="0.00000000" z="0.00000000" minvalue="-519.000000" max2value="1481.000000" valuetype="cont" initial_value="0.000000">
+            <geometry name="X-ax2is" geo="x2-ax2is.stl" clrr="0.86274511" clrg="0.86274511" clrb="0.86274511" alpha="0.00" reflectivity="0.00" reflectivityBitmapFileName="" objtype="geometry" />
+            <ax2is id="Z" type="translation" x2="0.00000000" y="0.00000000" z="1.00000000" minvalue="-130.000000" max2value="870.000000" valuetype="cont" initial_value="0.000000">
+                <geometry name="Logo_darkgrey" geo="logo_darkgrey.stl" clrr="0.50196081" clrg="0.50196081" clrb="0.50196081" alpha="0.00" reflectivity="0.00" reflectivityBitmapFileName="" objtype="geometry" />
+                <geometry name="Logo_grey" geo="logo_grey.stl" clrr="0.75294119" clrg="0.75294119" clrb="0.75294119" alpha="0.00" reflectivity="0.00" reflectivityBitmapFileName="" objtype="geometry" />
+                <geometry name="Logo_purple" geo="logo_purple.stl" clrr="0.54509807" clrg="0.00000000" clrb="0.54509807" alpha="0.00" reflectivity="0.00" reflectivityBitmapFileName="" objtype="geometry" />
+                <geometry name="Logo_red" geo="logo_red.stl" clrr="1.00000000" clrg="0.00000000" clrb="0.00000000" alpha="0.00" reflectivity="0.00" reflectivityBitmapFileName="" objtype="geometry" />
+                <geometry name="Nozzle" geo="nozzle.stl" clrr="0.75294119" clrg="0.75294119" clrb="0.75294119" alpha="0.00" reflectivity="0.00" reflectivityBitmapFileName="" objtype="geometry" />
+                <geometry name="Z-ax2is" geo="z-ax2is.stl" clrr="0.75294119" clrg="0.75294119" clrb="0.75294119" alpha="0.00" reflectivity="0.00" reflectivityBitmapFileName="" objtype="geometry" />
+                <transform id="holder_transform" initialvalue="1.00000000,0.00000000,0.00000000,0.00000000,0.00000000,1.00000000,0.00000000,0.00000000,0.00000000,0.00000000,1.00000000,168.00000000,0.00000000,0.00000000,0.00000000,1.00000000">
+                    <geometry name="tool" geo="tool.stl" alpha="0.00" reflectivity="0.10" reflectivityBitmapFileName="" objtype="tool" cuttr="0.82745099" cuttg="0.78039217" cuttb="0.67450982" noncuttr="0.50196081" noncuttg="0.50196081" noncuttb="0.50196081" arborr="0.39215687" arborg="0.39215687" arborb="0.39215687" holderr="0.36862746" holderg="0.57254905" holderb="0.69019610" />
+                </transform>
+            </ax2is>
+        </ax2is>
+        <geometry name="Y-ax2is" geo="y-ax2is.stl" clrr="0.86274511" clrg="0.86274511" clrb="0.86274511" alpha="0.00" reflectivity="0.00" reflectivityBitmapFileName="" objtype="geometry" />
+    </ax2is>
+    <collcheck id="cc1" name="cc1" group1="workpiece,stock,fix2ture,MachineBase,A-ax2is" group2="tool,Z-ax2is,Nozzle" />
+</machine_definition>
